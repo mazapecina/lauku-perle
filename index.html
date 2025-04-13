@@ -6,19 +6,155 @@
   <title>Lauku Pērle</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f6f3e9;
-      color: #3a3a3a;
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f9f1;
+      color: #2d3e2c;
+    }
+    header {
+      background-color: #88a17a;
       padding: 2rem;
+      color: white;
       text-align: center;
     }
-    h1 {
-      color: #5e4522;
+    nav {
+      background-color: #6b8f71;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 3rem 2rem;
+    }
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1564518098550-902d2ef14254');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 6rem 2rem;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+    }
+    footer {
+      background-color: #88a17a;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+    }
+    .lottie-container {
+      text-align: center;
+      margin: 2rem 0;
     }
   </style>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 <body>
-  <h1>Sveicināti "Lauku Pērlē"!</h1>
-  <p>Te būs sākums tavai digitālajai lauku saimniecību platformai.</p>
+  <header>
+    <h1>Lauku Pērle &ndash; Dzīvā Zemnieku Sētī</h1>
+    <p>Atklāj Latviju caur vietējo zemnieku stāstiem un garšām.</p>
+  </header>
+
+  <nav>
+    <a href="#saimniecibas">Saimniecības</a>
+    <a href="#par-mums">Par Mums</a>
+    <a href="#karte">Karte</a>
+    <a href="#produkti">Produkti</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Iepazīsti vietējo lauku burvību</h1>
+    <p>Apmeklē, nobaudi un piedzīvo kopā ar ģimeni!</p>
+  </section>
+
+  <section class="lottie-container">
+    <lottie-player
+      src="https://assets2.lottiefiles.com/packages/lf20_744582803044.json"
+      background="transparent"
+      speed="1"
+      style="width: 200px; height: 200px"
+      loop
+      autoplay>
+    </lottie-player>
+  </section>
+
+  <section id="saimniecibas">
+    <h2>Saimniecības</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Vidzemes &ndash; Dabas Krasti</h3>
+        <p>Bioloģiskā kazu saimniecība ar ekskursijām un degustācijām.</p>
+      </div>
+      <div class="card">
+        <h3>Kurzemes &ndash; Zemnieku Sēta</h3>
+        <p>Mājražotāju maize un ievārījumi no sirds.</p>
+      </div>
+      <div class="card">
+        <h3>Latgales &ndash; Zaļie Lāči</h3>
+        <p>Ăbolu dārzs un ekskursijas bērniem ar dzīvo dabu.</p>
+      </div>
+      <div class="card">
+        <h3>Zemgales &ndash; Laimes Ozols</h3>
+        <p>Svaigs siers, medus un mierpilna lauku vide.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="par-mums">
+    <h2>Par Mums</h2>
+    <p>
+      "Lauku Pērle" ir digitāla platforma, kas savieno ģimenes ar vietējām saimniecībām visā Latvijā. Piedāvājam iespēju atklāt vietējo pārtiku, satikt ražotājus un piedalīties lauku piedzīvojumos.
+    </p>
+  </section>
+
+  <section id="karte">
+    <h2>Karte</h2>
+    <p>Visas saimniecības uz kartes &ndash; lai plānotu savus apmeklējumus ērti.</p>
+    <iframe
+      src="https://www.google.com/maps/d/u/0/embed?mid=1LxAEXAMPLE"
+      width="100%"
+      height="300"
+      style="border:0;">
+    </iframe>
+  </section>
+
+  <section id="produkti">
+    <h2>Produkti</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Bioloģisks Kazas Siers</h3>
+        <p>No Vidzemes saimniecības "Dabas Krasti".</p>
+      </div>
+      <div class="card">
+        <h3>Lauku Ievārījums</h3>
+        <p>Ar mīlestīu gatavots Kurzemē, bez konservantiem.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Lauku Pērle &ndash; Dzīvā Zemnieku Tīkls</p>
+    <p>Kontakti: laukuperle@gmail.com</p>
+  </footer>
 </body>
 </html>
