@@ -4,157 +4,160 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lauku Pērle</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <style>
     body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #f2f7f0;
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f4f9f1;
-      color: #2d3e2c;
+      color: #2e3a1d;
     }
-    header {
-      background-color: #88a17a;
-      padding: 2rem;
+    header, footer {
+      background-color: #7da574;
       color: white;
       text-align: center;
+      padding: 1.5rem;
     }
     nav {
-      background-color: #6b8f71;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
+      background-color: #5f8052;
       padding: 1rem;
+      text-align: center;
     }
     nav a {
       color: white;
+      margin: 0 1rem;
       text-decoration: none;
       font-weight: bold;
     }
     section {
-      padding: 3rem 2rem;
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
     }
-    .hero {
-      background-image: url('https://images.unsplash.com/photo-1564518098550-902d2ef14254');
-      background-size: cover;
-      background-position: center;
-      color: white;
-      text-align: center;
-      padding: 6rem 2rem;
-    }
-    .hero h1 {
-      font-size: 3rem;
-      margin: 0;
+    h2 {
+      color: #406030;
     }
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-      margin-top: 2rem;
+      gap: 1.5rem;
+      margin-top: 1rem;
     }
     .card {
-      background-color: white;
+      background-color: #fff;
       border-radius: 8px;
+      padding: 1rem;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      padding: 1.5rem;
     }
-    footer {
-      background-color: #88a17a;
-      color: white;
-      text-align: center;
-      padding: 1.5rem;
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: 0;
+      border-radius: 10px;
     }
-    .lottie-container {
-      text-align: center;
-      margin: 2rem 0;
+    .chatbox {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 999;
     }
   </style>
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 <body>
   <header>
-    <h1>Lauku Pērle &ndash; Dzīvā Zemnieku Sētī</h1>
-    <p>Atklāj Latviju caur vietējo zemnieku stāstiem un garšām.</p>
+    <h1>Lauku Pērle – Dzīvā Zemnieku Sēta</h1>
+    <p>Atklāj Latviju caur vietējo saimniecību stāstiem un garšām</p>
   </header>
-
   <nav>
     <a href="#saimniecibas">Saimniecības</a>
-    <a href="#par-mums">Par Mums</a>
-    <a href="#karte">Karte</a>
     <a href="#produkti">Produkti</a>
+    <a href="#turisms">Tūrisma piedāvājumi</a>
+    <a href="#karte">Karte</a>
+    <a href="#resursi">Resursi</a>
+    <a href="#atbalsts">Atbalsts</a>
+    <a href="#par-mums">Par Mums</a>
   </nav>
 
-  <section class="hero">
-    <h1>Iepazīsti vietējo lauku burvību</h1>
-    <p>Apmeklē, nobaudi un piedzīvo kopā ar ģimeni!</p>
-  </section>
-
-  <section class="lottie-container">
-    <lottie-player
-      src="https://assets2.lottiefiles.com/packages/lf20_744582803044.json"
-      background="transparent"
-      speed="1"
-      style="width: 200px; height: 200px"
-      loop
-      autoplay>
-    </lottie-player>
+  <section class="hero" style="text-align: center">
+    <h2>Iepazīsti vietējās saimniecības</h2>
+    <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_ydo1amjm.json" background="transparent" speed="1" style="width: 300px; height: 300px; margin: auto" loop autoplay></lottie-player>
   </section>
 
   <section id="saimniecibas">
     <h2>Saimniecības</h2>
     <div class="grid">
       <div class="card">
-        <h3>Vidzemes &ndash; Dabas Krasti</h3>
-        <p>Bioloģiskā kazu saimniecība ar ekskursijām un degustācijām.</p>
+        <h3>Laimes Ozols (Zemgale)</h3>
+        <p>Specializējas piena produktos un biškopībā.</p>
       </div>
       <div class="card">
-        <h3>Kurzemes &ndash; Zemnieku Sēta</h3>
-        <p>Mājražotāju maize un ievārījumi no sirds.</p>
+        <h3>Zaļie Lāči (Latgale)</h3>
+        <p>Ābolu dārzs un saimniecības tūrisma aktivitātes.</p>
       </div>
       <div class="card">
-        <h3>Latgales &ndash; Zaļie Lāči</h3>
-        <p>Ăbolu dārzs un ekskursijas bērniem ar dzīvo dabu.</p>
+        <h3>Zemnieku Sēta (Kurzeme)</h3>
+        <p>Tradicionālie lauku produkti, maize un ievārījumi.</p>
       </div>
       <div class="card">
-        <h3>Zemgales &ndash; Laimes Ozols</h3>
-        <p>Svaigs siers, medus un mierpilna lauku vide.</p>
+        <h3>Dabas Krasti (Vidzeme)</h3>
+        <p>Kazkopība un degustāciju pasākumi.</p>
       </div>
     </div>
-  </section>
-
-  <section id="par-mums">
-    <h2>Par Mums</h2>
-    <p>
-      "Lauku Pērle" ir digitāla platforma, kas savieno ģimenes ar vietējām saimniecībām visā Latvijā. Piedāvājam iespēju atklāt vietējo pārtiku, satikt ražotājus un piedalīties lauku piedzīvojumos.
-    </p>
-  </section>
-
-  <section id="karte">
-    <h2>Karte</h2>
-    <p>Visas saimniecības uz kartes &ndash; lai plānotu savus apmeklējumus ērti.</p>
-    <iframe
-      src="https://www.google.com/maps/d/u/0/embed?mid=1LxAEXAMPLE"
-      width="100%"
-      height="300"
-      style="border:0;">
-    </iframe>
   </section>
 
   <section id="produkti">
     <h2>Produkti</h2>
     <div class="grid">
-      <div class="card">
-        <h3>Bioloģisks Kazas Siers</h3>
-        <p>No Vidzemes saimniecības "Dabas Krasti".</p>
-      </div>
-      <div class="card">
-        <h3>Lauku Ievārījums</h3>
-        <p>Ar mīlestīu gatavots Kurzemē, bez konservantiem.</p>
-      </div>
+      <div class="card"><strong>Siers ar ķimenēm</strong><br>No Dabas Krasti</div>
+      <div class="card"><strong>Zemeņu ievārījums</strong><br>No Zemnieku Sēta</div>
+      <div class="card"><strong>Lauku maize</strong><br>No Zemnieku Sēta</div>
+      <div class="card"><strong>Medus un tējas</strong><br>No Laimes Ozols</div>
     </div>
   </section>
 
-  <footer>
-    <p>&copy; 2025 Lauku Pērle &ndash; Dzīvā Zemnieku Tīkls</p>
+  <section id="turisms">
+    <h2>Tūrisma piedāvājumi</h2>
+    <p>Maršruti, saimniecību apmeklējumi, ekskursijas bērniem, sezonas pasākumi.</p>
+  </section>
+
+  <section id="karte">
+    <h2>Karte</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d217267.8881743099!2d24.00225788920459!3d56.94628596769813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eecf409dbfe3cb%3A0x400cfcd68f31660!2sLatvia!5e0!3m2!1sen!2slv!4v1689357488460!5m2!1sen!2slv"></iframe>
+  </section>
+
+  <section id="resursi">
+    <h2>Resursi</h2>
+    <p>Vietējo stāsti, blogi, padomi un ilgtspējas informācija.</p>
+  </section>
+
+  <section id="atbalsts">
+    <h2>Atbalsts</h2>
+    <ul>
+      <li>FAQ</li>
+      <li>Kā pievienot savu saimniecību?</li>
+      <li>Lietošanas noteikumi</li>
+    </ul>
+  </section>
+
+  <section id="par-mums">
+    <h2>Par Mums</h2>
+    <p>„Lauku Pērle” ir digitāla platforma, kas savieno saimniecības ar pircējiem un ceļotājiem visā Latvijā.</p>
+    <p>Misija: Popularizēt vietējo lauku dzīvesveidu un produktus.</p>
     <p>Kontakti: laukuperle@gmail.com</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Lauku Pērle. Visas tiesības aizsargātas.</p>
   </footer>
+
+  <div class="chatbox">
+    <iframe
+      src="https://www.chatbase.co/chatbot-iframe/YOUR-CHAT-ID"
+      width="300"
+      height="400"
+      frameborder="0">
+    </iframe>
+  </div>
 </body>
 </html>
